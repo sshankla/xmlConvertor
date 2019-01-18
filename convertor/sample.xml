@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <mapping>             
-    <subnet from="COL1" mask="COL2" />             
-    <location country="COL3" region="COL4" city="COL5" />     
+    <subnet from="VALUE1" mask="VALUE2" />             
+    <location country="VALUE3" region="VALUE4" city="VALUE5" />     
 </mapping>

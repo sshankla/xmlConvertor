@@ -1,0 +1,13 @@
+# Developer notes.
+18th Jan, 2018
+1. Created a mapping.conf file
+2. This file would have mapping of Columns to Values
+3. A new function initialize has been put in.
+4. This function will dynamically create the number of keys that need to be inserted in list_of_dictionary based on mappings.conf
+5. For example if mappings.conf has 3 values, then only 3 <K,V> pair would be created. If it has 9 values then 9 <K,V> pair would be created
+6. Each <K,V> pair is actually a mapping of Value to Column in CSV file.
+7. Value has to be inserted be end user in sample xml
+8. createlistofdict function is hard wired to have only 7 columns and follow a pattern based on column and csv file
+9. For example: the line temp_dict['fromIP']=tokens[0] has two drawbacks: a) CSV has to ensure that first column is IP address and b) this only works for geo_info.xml and not for generic xmls.
+Next Step:
+1. create a new function n_createlistofdict that will create list_of_dictionary based on dictionary sample returned by initialize function.
